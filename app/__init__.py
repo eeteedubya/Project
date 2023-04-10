@@ -6,7 +6,7 @@ from pygame import mixer
 import time
 from flask import Flask, render_template, Response, redirect
 
-app = Flask(__name__, template_folder="../templates", static_folder="../static")
+app = Flask(__name__, static_folder="../static")
 
 mixer.init()
 sound = mixer.Sound('alarm.wav')
